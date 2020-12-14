@@ -1,0 +1,130 @@
+PlugLib Version-1.0
+Copyright (C) 2018-2020 MathInDOS
+
+
+pluglib_color(char *color);
+
+This command use to show colors in hexadecimal which is taken from cmd arguments.
+
+
+pluglib_gotoxy(int x, int y);
+
+To move x and y coord such as x = 10 and y = 10
+
+
+
+pluglib_cur_state(int state);
+
+Change cursor state [0 = Show | 1 = Hide]
+
+
+
+pluglib_clear_scr(void);
+
+To clear console screen.
+
+
+
+pluglib_cursor_size(int size);
+
+Change cursor size.
+
+
+
+pluglib_real_time(void);
+
+Get system local time.
+
+
+
+pluglib_millisleep(int wait);
+
+Wait for milliseconds.
+
+
+
+pluglib_secsleep(int wait);
+
+Wait for seconds.
+
+
+
+pluglib_quick_edit(int edit);
+
+Enable or disable quick edit mode.
+
+
+
+pluglib_win_kbd(void);
+
+Enable keyboard input.
+
+
+
+pluglib_mouse(char move, int *x, int *y, int *c);
+
+Get mouse input. (Same function prototype as Darkbox)
+
+
+
+pluglib_setmouse_pos(int x, int y, int click);
+
+Change desktop mouse position. X Coord and Y Coord.
+
+
+
+pluglib_console_font(int size);
+
+Change console font size.
+
+
+
+pluglib_str_len(char *str);
+
+Get string length.
+
+
+
+pluglib_win_pos(char *window, int x, int y);
+
+Set window position x coord and y coord.
+
+
+
+pluglib_msgbox(char *msgtitle, char *msgbody, int code);
+
+Show messagebox with windows default icons.
+
+
+
+pluglib_draw_line(int Ax, int Bx, int Ay, int By);
+
+Draw line from x to y (Based on: https://rosettacode.org/wiki/Bitmap/Bresenham%27s_line_algorithm#C)
+
+
+
+
+pluglib_transparent(char *window,long percentage);
+
+Set a window transparency.
+
+
+
+pluglib_set_title(char *title);
+
+Set console title.
+
+
+
+pluglib_version(void);
+
+Get PlugLib Version
+
+
+
+pluglib_help(void);
+
+Get some help
+
+
+
